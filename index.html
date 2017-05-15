@@ -941,7 +941,7 @@
 
 		var touchStartX = 0, touchStartY = 0;
 		var startTime;
-		var allowedTime = 200, allowedDist = 150;
+		var tapTime = 100, allowedTime = 400, allowedDist = 150;
 		function setSpecial(bool) {
 			if (bool) {
 				$('html').unbind('click').unbind('contextmenu').unbind('touchstart').unbind('touchmove').unbind('touchend')
@@ -964,12 +964,16 @@
 				}).on('touchend', function(e) {
 					var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
 					var elapsedTime = new Date().getTime() - startTime;
-					var dist = touch.pageX - touchStartX;
-					if (elapsedTime <= allowedTime && Math.abs(dist) >= allowedDist) {
-						if (dist > 0) {
-							prev();
-						} else {
-							next();
+					if (elapsedTime <= tapTime) {
+						next();
+					} else {
+						var dist = touch.pageX - touchStartX;
+						if (elapsedTime <= allowedTime && Math.abs(dist) >= allowedDist) {
+							if (dist > 0) {
+								prev();
+							} else {
+								next();
+							}
 						}
 					}
 				});
