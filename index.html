@@ -766,24 +766,28 @@
 		var allowedTime = 200, allowedDist = 150;
 		function setSpecial(bool) {
 			if (bool) {
-				$(document).unbind('click').unbind('contextmenu').unbind('touchstart').unbind('touchmove').unbind('touchend').unbind('keydown');
+				$('html').unbind('click').unbind('contextmenu').unbind('touchstart').unbind('touchmove').unbind('touchend')
+				$(document).unbind('keydown');
 			} else {
-				$(document).on('click', function(e) {
+				$('html').on('click', function(e) {
 					next();
 				}).on('contextmenu', function(e) {
 					e.preventDefault();
 					prev();
 					return false;
 				}).on('touchstart', function(e) {
-					touchStartX = e.changedTouches[0].pageX;
-					touchStartY = e.changedTouches[0].pageY;
+					var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+					touchStartX = touch.pageX;
+					touchStartY = touch.pageY;
 					startTime = new Date().getTime();
 					e.preventDefault();
+					alert('Start');
 				}).on('touchmove', function(e) {
 					e.preventDefault();
 				}).on('touchend', function(e) {
+					var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
 					var elapsedTime = new Date().getTime() - startTime;
-					var dist = e.changedTouches[0].pageX - touchStartX;
+					var dist = touch.pageX - touchStartX;
 					if (elapsedTime <= allowedTime && Math.abs(dist) >= allowedDist) {
 						if (dist > 0) {
 							prev();
@@ -791,7 +795,9 @@
 							next();
 						}
 					}
-				}).keydown(function(e){
+					alert('End');
+				});
+				$(document).keydown(function(e){
 					var p = [65, 87, 37, 38];
 					var n = [83, 68, 40, 39];
 					if (p.indexOf(e.keyCode) >= 0) {
