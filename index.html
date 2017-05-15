@@ -1,0 +1,834 @@
+<html>
+	<head>
+		<title>Bahari | Negeri di Bawah Sana</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="Expires" CONTENT="Mon, 06 Jan 1990 00:00:01 GMT" />
+		<meta http-equiv="PRAGMA" CONTENT="NO-CACHE" />
+		<meta http-equiv="CACHE-CONTROL" CONTENT="NO-CACHE" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="./favicon.jpg">
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap-ms.css">
+		<link rel="stylesheet" type="text/css" href="./css/fontello.css">
+		<link rel="stylesheet" type="text/css" href="./css/animate.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/magic.min.css">
+	</head>
+
+	<style type="text/css">
+		/** CUSTOM CSS **/
+		.anim100 {
+			-webkit-animation-duration: 0.1s !important;
+			animation-duration: 0.1s !important;
+		}
+
+		.anim200 {
+			-webkit-animation-duration: 0.2s !important;
+			animation-duration: 0.2s !important;
+		}
+
+		.anim300 {
+			-webkit-animation-duration: 0.3s !important;
+			animation-duration: 0.3s !important;
+		}
+
+		.anim400 {
+			-webkit-animation-duration: 0.4s !important;
+			animation-duration: 0.4s !important;
+		}
+
+		.anim500 {
+			-webkit-animation-duration: 0.5s !important;
+			animation-duration: 0.5s !important;
+		}
+
+		.anim600 {
+			-webkit-animation-duration: 0.6s !important;
+			animation-duration: 0.6s !important;
+		}
+
+		.anim700 {
+			-webkit-animation-duration: 0.7s !important;
+			animation-duration: 0.7s !important;
+		}
+
+		.anim800 {
+			-webkit-animation-duration: 0.8s !important;
+			animation-duration: 0.8s !important;
+		}
+
+		.anim900 {
+			-webkit-animation-duration: 0.9s !important;
+			animation-duration: 0.9s !important;
+		}
+
+		html, body {
+			overflow: hidden;
+			user-drag: none; 
+			user-select: none;
+			-moz-user-select: none;
+			-webkit-user-drag: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+
+		body {
+			background: url(./bg/bg.jpg) no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+		.header {
+			position: absolute;
+			width: 100%;
+			top: 0;
+		}
+
+		.header img {
+			width: 100%;
+			user-select: none;
+			-moz-user-select: none;
+			-webkit-user-drag: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+
+		.comic-container {
+			position: relative;
+			border-radius: 20px;
+			text-align: center;
+			cursor: pointer;
+			background: url(./bg/bgkomik.jpg) no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+		.comic-container img {
+			position: absolute;
+			width: 50%;
+			height: 100%;
+			left: 0;
+			visibility: hidden;
+			user-select: none;
+			-moz-user-select: none;
+			-webkit-user-drag: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+
+		.desktop-only {
+			width: 100% !important;
+		}
+
+		.mobile img {
+			width: 100%;
+		}
+
+		.comic-container img.right {
+			left: inherit;
+			right: 0;
+		}
+
+		.mobile img.right {
+			left: 0;
+			right: inherit;
+		}
+
+		.desktop-only {
+			display: block;
+		}
+
+		.mobile .desktop-only {
+			display: none;
+		}
+
+		.mobile-only {
+			display: none;
+		}
+
+		.mobile .mobile-only {
+			display: block;
+		}
+	</style>
+
+	<body>
+		
+		<div class="header">
+
+			<img src="./bg/menu.png">
+
+		</div>
+
+		<div class="container comic-container">
+
+			<img page="0" class="page desktop-only" inClass="animated flash" outClass="animated flipOutY" src="./bg/cover.png">
+			<img page="0" class="page mobile-only" inClass="animated flash" outClass="animated flipOutY" src="./bg/cover-mobile.png">
+
+			<img page="1" class="page" inClass="animated lightSpeedIn" outClass="animated flipOutY" src="./images/1_1.png">
+			<img page="1" class="page" inClass="animated lightSpeedIn" outClass="animated flipOutY" src="./images/1_2.png" style="z-index: 2;">
+			<img page="1" class="page anim100" inClass="animated slideInLeft" outClass="animated flipOutY" src="./images/1_3.png" sfx="./sfx/tendang.mp3">
+
+			<img page="1" class="page right" inClass="magictime swap" outClass="animated flipOutY" src="./images/1_4.png" sfx="./sfx/splash.mp3">
+			<img page="1" class="page right" inClass="animated zoomInLeft" outClass="animated flipOutY" src="./images/1_5.png">
+			<img page="1" class="page right" inClass="animated bounceInLeft" outClass="animated flipOutY" src="./images/1_6.png">
+			<img page="1" class="page right" inClass="animated bounceInLeft" outClass="animated flipOutY" src="./images/1_7.png">
+			<img page="1" class="page right" inClass="animated bounceInLeft" outClass="animated flipOutY" src="./images/1_8.png" sfx="./sfx/pew.mp3" sfx-delay="100">
+
+			<img page="2" class="page" inClass="animated flash" outClass="animated flipOutY" src="./images/2_1.png" sfx="./sfx/poof.mp3">
+			<img page="2" class="page" inClass="animated lightSpeedIn" outClass="animated flipOutY" src="./images/2_2.png">
+			<img page="2" class="page" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/2_3.png">
+			<img page="2" class="page" inClass="animated shake" outClass="animated flipOutY" src="./images/2_4.png">
+
+			<img page="2" class="page right" inClass="animated zoomInLeft" outClass="animated flipOutY" src="./images/2_5.png" sfx="./sfx/bodiguard.mp3">
+			<img page="2" class="page right" inClass="animated zoomInLeft" outClass="animated flipOutY" src="./images/2_6.png">
+			<img page="2" class="page right" inClass="animated bounceInLeft" outClass="animated flipOutY" src="./images/2_7.png" special="f2_7">
+			<img class="f2_7 right" src="./gifs/2_7.gif">
+			<img class="f2_7 serodot right" src="./images/2_7serodot.png">
+			<img class="f2_7_finish right" src="./images/2_7teks.png">
+
+			<img page="3" class="page" inClass="animated lightSpeedIn" outClass="animated flipOutY" src="./images/3_1.png" style="z-index: 2;">
+			<img page="3" class="page" inClass="animated lightSpeedIn" outClass="animated flipOutY" src="./images/3_2.png" special="f3_2">
+			<img class="f3_2" src="./gifs/3_2.gif" style="z-index: 2;">
+			<img class="f3_2" opsi="M" src="./images/3_2M.png">
+			<img class="f3_2" opsi="S" src="./images/3_2S.png">
+			<img page="3" class="page" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/3_3.png">
+			<img page="3" class="page" inClass="magictime swap" outClass="animated flipOutY" src="./images/3_4.png" sfx="./sfx/splash.mp3">
+
+			<img page="3" class="page right" route="M" inClass="animated zoomInLeft" outClass="animated flipOutY" src="./images/3M_1.png" sfx="./sfx/slap.mp3">
+			<img page="3" class="page right" route="M" inClass="animated bounceInLeft" outClass="animated flipOutY" src="./images/3M_2.png">
+			<img page="3" class="page right" route="M" inClass="animated bounceInLeft" outClass="animated flipOutY" src="./images/3M_3.png">
+
+			<img page="3" class="page right" route="S" inClass="animated zoomInLeft" outClass="animated flipOutY" src="./images/3S_1.png">
+			<img page="3" class="page right group" route="S" inClass="animated bounceInLeft" outClass="animated flipOutY" src="./images/3S_2.png" style="z-index: 2;">
+			<img page="3" class="page right group" route="S" inClass="animated bounceInLeft" outClass="animated flipOutY" src="./images/3S_3.png" style="z-index: 2;">
+			<img page="3" class="page right group" route="S" inClass="animated bounceInLeft" outClass="animated flipOutY" src="./images/3S_4.png">
+			<img page="3" class="page right" route="S" inClass="animated bounceInLeft" outClass="animated flipOutY" src="./images/3S_5.png">
+
+			<img page="4" class="page" route="M" inClass="animated lightSpeedIn" outClass="animated flipOutY" src="./images/4M_1.png">
+			<img page="4" class="page" route="M" inClass="animated lightSpeedIn" outClass="animated flipOutY" src="./images/4M_2.png">
+			<img page="4" class="page" route="M" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/4M_3.png">
+			<img page="4" class="page" route="M" inClass="magictime swap" outClass="animated flipOutY" src="./images/4M_4.png" sfx="./sfx/slap.mp3">
+
+			<img page="4" class="page right" route="M" inClass="animated zoomInLeft" outClass="animated flipOutY" src="./images/4M_5.png">
+			<img page="4" class="page right" route="M" inClass="animated bounceInLeft" outClass="animated flipOutY" src="./images/4M_6.png">
+			<img page="4" class="page right" route="M" inClass="animated bounceInLeft" outClass="animated flipOutY" src="./images/4M_7.png">
+
+			<img page="4" class="page" route="S" inClass="animated lightSpeedIn" outClass="animated flipOutY" src="./images/4S_1.png">
+			<img page="4" class="page" route="S" inClass="animated lightSpeedIn" outClass="animated flipOutY" src="./images/4S_2.png">
+			<img page="4" class="page" route="S" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/4S_3.png">
+
+			<img page="4" class="page right" route="S" inClass="magictime swap" outClass="animated flipOutY" src="./images/4S_4.png">
+			<img page="4" class="page right" route="S" inClass="animated zoomInLeft" outClass="animated flipOutY" src="./images/4S_5.png" style="z-index: 2;">
+			<img page="4" class="page right" route="S" inClass="animated bounceInLeft" outClass="animated flipOutY" src="./images/4S_6.png">
+			<img page="4" class="page right" route="S" inClass="animated bounceInLeft" outClass="animated flipOutY" src="./images/4S_7.png">
+			<img page="4" class="page right" route="S" inClass="animated bounceInLeft" outClass="animated flipOutY" src="./images/4S_8.png">
+
+			<img page="5" class="page" inClass="animated lightSpeedIn" outClass="animated flipOutY" src="./images/5_1.png">
+			<img page="5" class="page" inClass="animated lightSpeedIn" outClass="animated flipOutY" src="./images/5_2.png">
+			<img page="5" class="page" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/5_3.png">
+			<img page="5" class="page" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/5_4.png">
+
+			<img page="5" class="page right" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/5_5.png">
+			<img page="5" class="page right" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/5_6.png" sfx="./sfx/scream.mp3">
+			<img page="5" class="page right" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/5_7.png" special="f5_7">
+			<img class="f5_7 right" src="./gifs/5_7.gif">
+			<img class="f5_7 right" opsi="S2" src="./images/5_7tolong.png">
+			<img class="f5_7 right" opsi="A" src="./images/5_7bubble.png">
+
+			<img page="6" class="page" route="S2" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/6S_1.png" style="z-index: 2;">
+			<img page="6" class="page" route="S2" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/6S_2.png">
+			<img page="6" class="page" route="S2" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/6S_3.png">
+			<img page="6" class="page" route="S2" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/6S_4.png" sfx="./sfx/rock rumble.mp3">
+
+			<img page="6" class="page right" route="S2" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/6S_5.png">
+			<img page="6" class="page right" route="S2" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/6S_6.png" style="z-index: 2;">
+			<img page="6" class="page right" route="S2" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/6S_7.png" sfx="./sfx/splash.mp3">
+			<img page="6" class="page right" route="S2" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/6S_8.png">
+
+			<img page="6" class="page" route="A" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/6A_1.png">
+			<img page="6" class="page" route="A" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/6A_2.png">
+			<img page="6" class="page" route="A" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/6A_3.png">
+			<img page="6" class="page" route="A" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/6A_4.png" sfx="./sfx/jebum.mp3" style="z-index: 2;">
+			<img page="6" class="page" route="A" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/6A_5.png" bgm="./sfx/serem.mp3">
+
+			<img page="6" class="page right" route="A" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/6A_6.png">
+			<img page="6" class="page right" route="A" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/6A_7.png">
+			<img page="6" class="page right" route="A" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/6A_8.png">
+			<img page="6" class="page right" route="A" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/6A_9.png">
+			<img page="6" class="page right" route="A" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/6A_10.png" bgm="./sfx/bgm.mp3">
+
+			<img page="7" class="page" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/7_1.png">
+			<img page="7" class="page group" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/7_2.png" style="z-index: 2;">
+			<img page="7" class="page group" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/7_3.png" style="z-index: 2;">
+			<img page="7" class="page group" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/7_4.png">
+			<img page="7" class="page" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/7_5.png">
+
+			<img page="7" class="page right" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/7_6.png">
+			<img page="7" class="page right" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/7_7.png">
+			<img page="7" class="page right" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/7_8.png">
+			<img page="7" class="page right" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/7_9.png">
+
+			<img page="8" class="page" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/8_1.png">
+			<img page="8" class="page" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/8_2.png">
+			<img page="8" class="page" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/8_3.png">
+			<img page="8" class="page" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/8_4.png">
+			<img page="8" class="page" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/8_5.png">
+
+			<img page="8" class="page right" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/8_6.png" special="f8_6" style="z-index: 2;">
+			<img class="f8_6 right" src="./gifs/8_6.gif" style="z-index: 2;">
+			<img class="f8_6_onclick right" src="./images/8_6bzzt.png" style="z-index: 2;">
+			<img page="8" class="page right" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/8_7.png" sfx="./sfx/pew.mp3">
+			<img page="8" class="page right" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/8_8.png" sfx="./sfx/splash.mp3">
+			<img page="8" class="page right" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/8_9.png">
+			<img page="8" class="page right" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/8_10.png">
+			<img page="8" class="page right" inClass="animated fadeInUp" outClass="animated flipOutY" src="./images/8_11.png">
+
+			<img page="0" class="page desktop-only" inClass="animated flash" outClass="animated flipOutY" src="./bg/end.png">
+			<img page="0" class="page mobile-only" inClass="animated flash" outClass="animated flipOutY" src="./bg/end-mobile.png">
+
+		</div>
+
+		<div class="bgm">
+			<audio></audio>
+		</div>
+
+	</body>
+
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.plugin.min.js"></script>
+	<script type="text/javascript" src="./js/bootbox.min.js"></script>
+	<script type="text/javascript">
+		/** CUSTOM JS **/
+		var bgm_stop = false;
+		var bgm = document.createElement('audio');
+		bgm.addEventListener('ended', function() {
+			if (!bgm_stop) {
+				this.currentTime = 0;
+				this.play();
+			}
+		}, false);
+		bgm.setAttribute('src', './sfx/bgm.mp3');
+		bgm.play();
+
+		var relWidth = 934;
+		var relHeight = 600;
+		var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+		var _isAnimate = false;
+		var _isSpecial = false;
+		var _isMobile = false;
+		var route_S_M = '';
+		var route_S2_A = '';
+
+		var initX, initY = 0;
+		var curPercentage = 0;
+		var tempPercentage = 0;
+		function f2_7_next(obj) {
+			curPercentage = 25;
+			$('.f2_7.serodot').css('left', 'inherit').css('right', 0).css('top', '40%').css('width', (_isMobile ? curPercentage : curPercentage / 2)+'%').css('height', curPercentage+'%');
+			$('.'+obj.attr('special')).css('visibility', 'visible').addClass(obj.attr('inClass')).one(animationEnd, function(e) {
+				$(this).removeClass(obj.attr('inClass'));
+			});
+		}
+
+		function f2_7_prev(obj) {
+			$('.'+obj.attr('special')).addClass(obj.attr('outClass')).one(animationEnd, function(e) {
+				$(this).removeClass(obj.attr('outClass')).css('visibility', 'hidden').show();
+			});
+			$('.f2_7_finish').addClass(obj.attr('outClass')).one(animationEnd, function(e) {
+				$(this).removeClass(obj.attr('outClass')).css('visibility', 'hidden').show();
+			});
+		}
+
+		function f2_7_nextpage() {
+			$('.f2_7').css('visibility', 'hidden');
+			$('.f2_7_finish').css('visibility', 'hidden');
+		}
+
+		function f2_7_prevpage() {
+			$('.f2_7').css('visibility', 'visible');
+			$('.f2_7.serodot').css('left', 'inherit').css('right', 0).css('top', '0').css('width', (_isMobile ? 100 : 50)+'%').css('height', '100%');
+			$('.f2_7_finish').css('visibility', 'visible');
+		}
+
+		function f2_7() {
+			$('html').on('mousedown', function(e) {
+				initX = e.clientX;
+				initY = e.clientY;
+				if (curPercentage < 25) {
+					curPercentage = 25;
+				}
+				$(this).on('mousemove', function(e) {
+					var range = e.clientY - initY + initX - e.clientX;
+					if (range > 0) {
+						tempPercentage = curPercentage + (range / 10);
+						if (tempPercentage >= 100) {
+							tempPercentage = 100;
+							$(this).unbind('mousedown');
+							$(this).unbind('mousemove');
+							$(this).unbind('mouseup');
+							_isAnimate = true;
+							$('.f2_7.serodot').addClass('animated flash').one(animationEnd, function(e) {
+								$(this).removeClass('animated flash');
+								_isAnimate = false;
+								setSpecial(false);
+							});
+							$('.f2_7_finish').css('visibility', 'visible').addClass('animated flash').one(animationEnd, function(e) {
+								$(this).removeClass('animated flash');
+							})
+						}
+						var top = tempPercentage > 25 ? 40 - 40 * (tempPercentage - 25) / 75 : 40;
+						$('.f2_7.serodot').css('top', top+'%').css('width', (_isMobile ? tempPercentage : tempPercentage / 2)+'%').css('height', tempPercentage+'%');
+					}
+				});
+			}).on('mouseup', function() {
+				$(this).unbind('mousemove');
+				curPercentage = tempPercentage;
+			}).on('touchstart', function(e) {
+				var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+				initX = touch.pageX;
+				initY = touch.pageY;
+				if (curPercentage < 25) {
+					curPercentage = 25;
+				}
+				$(this).on('touchmove', function(e) {
+					var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+					var range = touch.pageY - initY + initX - touch.pageX;
+					if (range > 0) {
+						tempPercentage = curPercentage + (range / 10);
+						if (tempPercentage >= 100) {
+							tempPercentage = 100;
+							$(this).unbind('touchstart');
+							$(this).unbind('touchmove');
+							$(this).unbind('touchend');
+							_isAnimate = true;
+							$('.f2_7.serodot').addClass('animated flash').one(animationEnd, function(e) {
+								$(this).removeClass('animated flash');
+								_isAnimate = false;
+								setSpecial(false);
+							});
+							$('.f2_7_finish').css('visibility', 'visible').addClass('animated flash').one(animationEnd, function(e) {
+								$(this).removeClass('animated flash');
+							})
+						}
+						var top = tempPercentage > 25 ? 40 - 40 * (tempPercentage - 25) / 75 : 40;
+						$('.f2_7.serodot').css('top', top+'%').css('width', (_isMobile ? tempPercentage : tempPercentage / 2)+'%').css('height', tempPercentage+'%');
+					}
+				});
+			}).on('touchend', function(e) {
+				$(this).unbind('touchmove');
+				curPercentage = tempPercentage;
+			});
+		}
+		
+		function f3_2_next(obj) {
+			$('.f3_2[opsi]').css('opacity', '0.6');
+			$('.'+obj.attr('special')).css('visibility', 'visible').addClass(obj.attr('inClass')).one(animationEnd, function(e) {
+				$(this).removeClass(obj.attr('inClass'));
+			});
+		}
+
+		function f3_2_prev(obj) {
+			$('.'+obj.attr('special')).addClass(obj.attr('outClass')).one(animationEnd, function(e) {
+				$(this).removeClass(obj.attr('outClass')).css('visibility', 'hidden').show();
+			});
+		}
+
+		function f3_2_nextpage() {
+			$('.f3_2').css('visibility', 'hidden');
+		}
+
+		function f3_2_prevpage() {
+			$('.f3_2').css('visibility', 'visible');
+		}
+
+		function f3_2() {
+			$('html').mousemove(function(e) {
+				var offset = $('.comic-container').offset();
+				if (e.pageX > offset.left +  10 * $('.comic-container').width()  / relWidth  &&
+					e.pageX < offset.left + 185 * $('.comic-container').width()  / relWidth  &&
+					e.pageY > offset.top  +   7 * $('.comic-container').height() / relHeight &&
+					e.pageY < offset.top  + 383 * $('.comic-container').height() / relHeight) {
+						$('.f3_2[opsi=M]').css('opacity', '1');
+				} else {
+					$('.f3_2[opsi=M]').css('opacity', '0.6');
+				}
+				if (e.pageX > offset.left + 297 * $('.comic-container').width()  / relWidth  &&
+					e.pageX < offset.left + 450 * $('.comic-container').width()  / relWidth  &&
+					e.pageY > offset.top  +   7 * $('.comic-container').height() / relHeight &&
+					e.pageY < offset.top  + 383 * $('.comic-container').height() / relHeight) {
+						$('.f3_2[opsi=S]').css('opacity', '1');
+				} else {
+					$('.f3_2[opsi=S]').css('opacity', '0.6');
+				}
+			}).mouseup(function(e) {
+				if ((e.which || e.button) == 1) { //if left click
+					var offset = $('.comic-container').offset();
+					if (e.pageX > offset.left +  10 * $('.comic-container').width()  / relWidth  &&
+						e.pageX < offset.left + 185 * $('.comic-container').width()  / relWidth  &&
+						e.pageY > offset.top  +   7 * $('.comic-container').height() / relHeight &&
+						e.pageY < offset.top  + 383 * $('.comic-container').height() / relHeight) {
+							$('.f3_2[opsi=M]').css('opacity', '1');
+							$('.f3_2[opsi=S]').css('opacity', '0.6');
+							$(this).unbind('mousemove');
+							$(this).unbind('mouseup');
+							setSpecial(false);
+							route_S_M = 'M';
+							next();
+					}
+					if (e.pageX > offset.left + 297 * $('.comic-container').width()  / relWidth  &&
+						e.pageX < offset.left + 450 * $('.comic-container').width()  / relWidth  &&
+						e.pageY > offset.top  +   7 * $('.comic-container').height() / relHeight &&
+						e.pageY < offset.top  + 383 * $('.comic-container').height() / relHeight) {
+							$('.f3_2[opsi=M]').css('opacity', '0.6');
+							$('.f3_2[opsi=S]').css('opacity', '1');
+							$(this).unbind('mousemove');
+							$(this).unbind('mouseup');
+							setSpecial(false);
+							route_S_M = 'S';
+							next();
+					}
+				}
+			});
+		}
+
+		function f5_7_next(obj) {
+			$('.f5_7[opsi]').css('opacity', '0.5');
+			$('.'+obj.attr('special')).css('visibility', 'visible').addClass(obj.attr('inClass')).one(animationEnd, function(e) {
+				$(this).removeClass(obj.attr('inClass'));
+			});
+		}
+
+		function f5_7_prev(obj) {
+			$('.'+obj.attr('special')).addClass(obj.attr('outClass')).one(animationEnd, function(e) {
+				$(this).removeClass(obj.attr('outClass')).css('visibility', 'hidden').show();
+			});
+		}
+
+		function f5_7_nextpage() {
+			$('.f5_7').css('visibility', 'hidden');
+		}
+
+		function f5_7_prevpage() {
+			$('.f5_7').css('visibility', 'visible');
+		}
+
+		function f5_7() {
+			$('html').mousemove(function(e) {
+				var offset = $('.comic-container').offset();
+				if (e.pageX > offset.left + (relWidth - 457) * $('.comic-container').width() / relWidth &&
+					e.pageX < offset.left + (relWidth - 347) * $('.comic-container').width() / relWidth &&
+					e.pageY > offset.top  + 373 * $('.comic-container').height() / relHeight &&
+					e.pageY < offset.top  + 587 * $('.comic-container').height() / relHeight) {
+						$('.f5_7[opsi=S2]').css('opacity', '1');
+				} else {
+					$('.f5_7[opsi=S2]').css('opacity', '0.5');
+				}
+				if (e.pageX > offset.left + (relWidth - 100) * $('.comic-container').width() / relWidth &&
+					e.pageX < offset.left + (relWidth -   7) * $('.comic-container').width() / relWidth &&
+					e.pageY > offset.top  + 373 * $('.comic-container').height() / relHeight &&
+					e.pageY < offset.top  + 587 * $('.comic-container').height() / relHeight) {
+						$('.f5_7[opsi=A]').css('opacity', '1');
+				} else {
+					$('.f5_7[opsi=A]').css('opacity', '0.5');
+				}
+			}).mouseup(function(e) {
+				if ((e.which || e.button) == 1) { //if left click
+					var offset = $('.comic-container').offset();
+					if (e.pageX > offset.left + (relWidth - 457) * $('.comic-container').width() / relWidth &&
+						e.pageX < offset.left + (relWidth - 347) * $('.comic-container').width() / relWidth &&
+						e.pageY > offset.top  + 373 * $('.comic-container').height() / relHeight &&
+						e.pageY < offset.top  + 587 * $('.comic-container').height() / relHeight) {
+							$('.f5_7[opsi=S2]').css('opacity', '1');
+							$('.f5_7[opsi=A]').css('opacity', '0.5');
+							$(this).unbind('mousemove');
+							$(this).unbind('mouseup');
+							setSpecial(false);
+							route_S2_A = 'S2';
+							next();
+					}
+					if (e.pageX > offset.left + (relWidth - 100) * $('.comic-container').width() / relWidth &&
+						e.pageX < offset.left + (relWidth -   7) * $('.comic-container').width() / relWidth &&
+						e.pageY > offset.top  + 373 * $('.comic-container').height() / relHeight &&
+						e.pageY < offset.top  + 587 * $('.comic-container').height() / relHeight) {
+							$('.f5_7[opsi=S2]').css('opacity', '0.6');
+							$('.f5_7[opsi=A]').css('opacity', '1');
+							$(this).unbind('mousemove');
+							$(this).unbind('mouseup');
+							setSpecial(false);
+							route_S2_A = 'A';
+							next();
+					}
+				}
+			});
+		}
+
+		function f8_6_next(obj) {
+			$('.'+obj.attr('special')).css('visibility', 'visible').addClass(obj.attr('inClass')).one(animationEnd, function(e) {
+				$(this).removeClass(obj.attr('inClass'));
+			});
+		}
+
+		function f8_6_prev(obj) {
+			$('.'+obj.attr('special')).addClass(obj.attr('outClass')).one(animationEnd, function(e) {
+				$(this).removeClass(obj.attr('outClass')).css('visibility', 'hidden').show();
+			});
+			$('.f8_6_onclick').addClass(obj.attr('outClass')).one(animationEnd, function(e) {
+				$(this).removeClass(obj.attr('outClass')).css('visibility', 'hidden').show();
+			});
+		}
+
+		function f8_6_nextpage() {
+			$('.f8_6').css('visibility', 'hidden');
+			$('.f8_6_onclick').css('visibility', 'hidden');
+		}
+
+		function f8_6_prevpage() {
+			$('.f8_6').css('visibility', 'visible');
+			$('.f8_6_onclick').css('visibility', 'visible');
+		}
+
+		function f8_6() {
+			$('html').mouseup(function(e) {
+				if ((e.which || e.button) == 1) {
+					var offset = $('.comic-container').offset();
+					if (e.pageX > offset.left + (relWidth - 300) * $('.comic-container').width() / relWidth &&
+						e.pageX < offset.left + (relWidth - 227) * $('.comic-container').width() / relWidth &&
+						e.pageY > offset.top  +  13 * $('.comic-container').height() / relHeight &&
+						e.pageY < offset.top  + 100 * $('.comic-container').height() / relHeight) {
+							$(this).unbind('mouseup');
+							playSound('./sfx/cliiingg.mp3');
+							_isAnimate = true;
+							$('.f8_6').css('visibility', 'hidden');
+							$('.f8_6_onclick').css('visibility', 'visible').addClass('animated flash').one(animationEnd, function(e) {
+								$(this).removeClass('animated flash');
+								_isAnimate = false;
+								setSpecial(false);
+								next();
+							});
+					}
+				}
+			});
+		}
+
+		function changeBGM(src) {
+			bgm_stop = true;
+			bgm.pause();
+			bgm_stop = false;
+			bgm.setAttribute('src', src);
+			bgm.play();
+		}
+
+		function playSound(src) {
+			var audio = document.createElement('audio');
+			audio.setAttribute('src', src);
+			audio.play();
+		}
+
+		function getRoute() {
+			var route = '';
+			if (route_S_M == 'M') {
+				route += '[route!=S]';
+			} else if (route_S_M == 'S') {
+				route += '[route!=M]';
+			}
+			if (route_S2_A == 'S2') {
+				route += '[route!=A]';
+			} else if (route_S2_A == 'A') {
+				route += '[route!=S2]';
+			}
+			if (_isMobile) {
+				route += ':not(.desktop-only)';
+			} else {
+				route += ':not(.mobile-only)';
+			}
+			return route;
+		}
+
+		function next() {
+			if (!_isAnimate && !_isSpecial) {
+				var route = getRoute();
+				var last = $('.comic-container').find('.last-activated');
+				if (last.length > 0) {
+					var obj = last.nextAll('.page'+route+':first');
+				} else {
+					var obj = $('.comic-container').find('.page'+route+':first');
+				}
+				if (obj.length > 0) {
+					if (last.length > 0) {
+						last.removeClass('last-activated');
+						if (last.attr('page') != obj.attr('page')) {
+							$('[page='+last.attr('page')+']'+route).css('visibility', 'hidden');
+							$('[page='+last.attr('page')+'][special]'+route).each(function(e) {
+								eval($(this).attr('special')+'_nextpage()');
+							});
+						} else if (_isMobile && !last.hasClass('right') && obj.hasClass('right')) {
+							$('[page='+last.attr('page')+']'+route+':not(.right)').css('visibility', 'hidden');
+							$('[page='+last.attr('page')+'][special]'+route+':not(.right)').each(function(e) {
+								eval($(this).attr('special')+'_nextpage()');
+							});
+						}
+					}
+					_isAnimate = true;
+					if (obj[0].hasAttribute('special')) {
+						setSpecial(true);
+						eval(obj[0].getAttribute('special')+'_next(obj)');
+					}
+					if (obj[0].hasAttribute('sfx')) {
+						if (obj[0].hasAttribute('sfx-delay')) {
+							setTimeout(function(e) {
+								playSound(obj[0].getAttribute('sfx'));
+							}, parseInt(obj[0].getAttribute('sfx-delay')));
+						} else {
+							playSound(obj[0].getAttribute('sfx'));
+						}
+					}
+					if (obj[0].hasAttribute('bgm')) {
+						changeBGM(obj[0].getAttribute('bgm'));
+					}
+					obj.css('visibility', 'visible').addClass('last-activated').addClass(obj.attr('inClass')).one(animationEnd, function(e) {
+						$(this).removeClass($(this).attr('inClass'));
+						_isAnimate = false;
+						if (this.hasAttribute('special')) {
+							eval(this.getAttribute('special')+'();');
+						}
+						if ($(this).hasClass('group')) {
+							var n = obj.nextAll('.page'+route+':first');
+							if (n.hasClass('group')) {
+								next();
+							}
+						}
+					});
+				}
+			}
+		}
+
+		function prev() {
+			if (!_isAnimate) {
+				setSpecial(false);
+				var route = getRoute();
+				var last = $('.comic-container').find('.last-activated');
+				if (last.length > 0) {
+					_isAnimate = true;
+					if (last[0].hasAttribute('special')) {
+						eval(last[0].getAttribute('special')+'_prev(last)');
+					}
+					last.addClass(last.attr('outClass')).one(animationEnd, function(e) {
+						$(this).removeClass($(this).attr('outClass')).removeClass('last-activated').css('visibility', 'hidden').show();
+						var obj = $(this).prevAll('.page'+route+':first');
+						if (obj.length > 0) {
+							obj.addClass('last-activated');
+							if (last.attr('page') != obj.attr('page')) {
+								if (_isMobile) {
+									$('.right[page='+obj.attr('page')+']'+route).css('visibility', 'visible');
+									$('.right[page='+obj.attr('page')+'][special]'+route).each(function(e) {
+										eval($(this).attr('special')+'_prevpage()');
+									});
+								} else {
+									$('[page='+obj.attr('page')+']'+route).css('visibility', 'visible');
+									$('[page='+obj.attr('page')+'][special]'+route).each(function(e) {
+										eval($(this).attr('special')+'_prevpage()');
+									});
+								}
+							} else if (_isMobile && !obj.hasClass('right') && last.hasClass('right')) {
+								$('[page='+last.attr('page')+']'+route+':not(.right)').css('visibility', 'visible');
+								$('[page='+last.attr('page')+'][special]'+route+':not(.right)').each(function(e) {
+									eval($(this).attr('special')+'_prevpage()');
+								});
+							}
+						}
+						_isAnimate = false;
+						if (last.hasClass('group') && obj.hasClass('group')) {
+							prev();
+						}
+					});
+				}
+			}
+		}
+
+		$(function() {
+			setSpecial(false);
+			resizeComicContainer();
+			next();
+		});
+
+		$(window).on('resize', function(e) {
+			resizeComicContainer();
+		});
+
+		var touchStartX = 0, touchStartY = 0;
+		var startTime;
+		var allowedTime = 200, allowedDist = 150;
+		function setSpecial(bool) {
+			if (bool) {
+				$(document).unbind('click').unbind('contextmenu').unbind('touchstart').unbind('touchmove').unbind('touchend').unbind('keydown');
+			} else {
+				$(document).on('click', function(e) {
+					next();
+				}).on('contextmenu', function(e) {
+					e.preventDefault();
+					prev();
+					return false;
+				}).on('touchstart', function(e) {
+					touchStartX = e.changedTouches[0].pageX;
+					touchStartY = e.changedTouches[0].pageY;
+					startTime = new Date().getTime();
+					e.preventDefault();
+				}).on('touchmove', function(e) {
+					e.preventDefault();
+				}).on('touchend', function(e) {
+					var elapsedTime = new Date().getTime() - startTime;
+					var dist = e.changedTouches[0].pageX - touchStartX;
+					if (elapsedTime <= allowedTime && Math.abs(dist) >= allowedDist) {
+						if (dist > 0) {
+							prev();
+						} else {
+							next();
+						}
+					}
+				}).keydown(function(e){
+					var p = [65, 87, 37, 38];
+					var n = [83, 68, 40, 39];
+					if (p.indexOf(e.keyCode) >= 0) {
+						prev();
+					} else if (n.indexOf(e.keyCode) >= 0) {
+						next();
+					}
+				});
+			}
+			_isSpecial = bool;
+		}
+
+		function resizeComicContainer() {
+			if ($(window).width() > $(window).height()) {
+				relWidth = 934;
+				_isMobile = false;
+				$('.comic-container').removeClass('mobile');
+			} else {
+				relWidth = 467;
+				_isMobile = true;
+				$('.comic-container').addClass('mobile');
+			}
+			var menu_height = $(window).width() * 70 / 1400;
+			var ac_height = $(window).height() - menu_height - 30;
+			if (ac_height > $('.comic-container').width() * relHeight / relWidth) {
+				$('.comic-container').height($('.comic-container').width() * relHeight / relWidth);
+			} else {
+				$('.comic-container').height(ac_height);
+			}
+			$('.comic-container').css('margin-top', (menu_height + 15) + 'px');
+		}
+
+		function showGuide() {
+			bootbox.dialog({
+				title: 'Control Guide',
+				message: '<table><tr><td>Next</td><td>&nbsp;:&nbsp;</td><td>Left Click On the Box or Press S / D / Down / Right</td></tr><tr><td>Previous</td><td>&nbsp;:&nbsp;</td><td>Right Click On the Box or Press A / W / Up / Left</td></tr></table>',
+			});
+		}
+	</script>
+</html>
